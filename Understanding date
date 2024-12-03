@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the Car Price Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .subsection {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .highlight {
+            background-color: #e8f4f8;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin: 10px 0;
+        }
+
+        .correlation-table {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding the Car Price Data</h1>
+
+    <div class="section">
+        <h2>1. Data Overview</h2>
+        <div class="subsection">
+            <p><strong>Dataset:</strong> CarPrice_Assignment.csv</p>
+            <p><strong>Context:</strong> US market car data collected for Geely Auto's market entry analysis</p>
+            <div class="highlight">
+                Primary objective: Understand pricing dynamics for car design and business strategy development
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Data Analysis Steps</h2>
+        
+        <h3>Data Cleaning Process</h3>
+        <ul>
+            <li>Missing value identification and handling</li>
+            <li>Outlier detection and treatment</li>
+            <li>Data consistency verification</li>
+            <li>Data type validation</li>
+        </ul>
+
+           <div class="section">
+        <h2>3. Variable Relationships</h2>
+        <table class="correlation-table">
+            <tr>
+                <th>Variable</th>
+                <th>Correlation with Price</th>
+            </tr>
+            <tr>
+                <td>Horsepower</td>
+                <td>0.81 (Strong Positive)</td>
+            </tr>
+            <tr>
+                <td>Curb Weight</td>
+                <td>0.87 (Very Strong Positive)</td>
+            </tr>
+            <tr>
+                <td>Engine Size</td>
+                <td>0.87 (Very Strong Positive)</td>
+            </tr>
+            <tr>
+                <td>Fuel Efficiency</td>
+                <td>-0.68 to -0.70 (Strong Negative)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>4. Initial Insights</h2>
+        <div class="highlight">
+            <h3>Key Findings:</h3>
+            <ul>
+                <li>Strong positive correlation between price and performance metrics (horsepower, engine size)</li>
+                <li>Vehicle weight shows strongest correlation with price</li>
+                <li>Inverse relationship between fuel efficiency and price</li>
+                <li>Car dimensions show moderate to strong influence on pricing</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
